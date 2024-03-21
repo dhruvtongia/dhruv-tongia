@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png" />
+    <title>Dhruv</title>
   </head>
   <body class="flex text-white bg-slate-900">
     <div
@@ -12,11 +13,17 @@
     >
       <div>
         <h1 class="text-5xl mb-2">Dhruv Tongia</h1>
-        <h3 class="text-xl mb-2">Software Engineer</h3>
-        <h4 class="text-xl">coding.....</h4>
+        <h3 class="text-xl mb-2">Software Developer</h3>
+        <h4 class="text-l text-slate-400">
+          On the path to become the best developer
+        </h4>
       </div>
-      <div class="text-neutral-500">
-        <a href="#about" class="group flex items-center mb-2">
+      <div class="text-neutral-500 w-[20rem]">
+        <a
+          id="tagLink"
+          href="#about"
+          class="group flex items-center mb-2 transition-colors duration-300"
+        >
           <span
             class="w-8 h-0.5 bg-neutral-500 group-hover:bg-slate-100 group-hover:w-16 mr-3"
           ></span>
@@ -87,22 +94,24 @@
         <li class="mr-5 text-xs shrink-0">
           <a
             class="block hover:text-slate-200"
-            href="https://twitter.com/Dhruv_Tongia"
+            href="mailto: dhruvtongia1812@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="Twitter (opens in a new tab)"
-            title="Twitter"
-            ><span class="sr-only">Twitter</span
+            aria-label="Email (opens in a new tab)"
+            title="Email"
+            ><span class="sr-only">Email</span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 1227"
               fill="none"
-              class="h-5 w-5"
-              aria-hidden="true"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
             >
               <path
-                d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
           </a>
@@ -110,8 +119,38 @@
       </ul>
     </div>
     <div class="flex-auto flex flex-col w-[30rem] mr-[15rem] pt-24">
-      <div id="about">About</div>
-      <div id="experience ">
+      <div id="about">
+        <div class="pb-4">About</div>
+        <div class="text-slate-400">
+          <p class="pb-4">
+            My journey with coding began back in my freshman year at
+            <b>IIT Dhanbad</b>, and it's been a whirlwind of excitement ever
+            since! From those early days of discovery to now, where I'm proudly
+            rocking it as a Software Development Engineer, I've been on an
+            exhilarating ride of learning and growth.
+          </p>
+          <p class="pb-4">
+            Each day, I dive headfirst into the world of tech, refining my
+            skills and exploring the endless possibilities of system and their
+            design. I have a solid foundation in data structures and algorithms,
+            database management, and operating systems.
+          </p>
+          <p class="pb-4">
+            When I'm not typing away at my keyboard, you'll likely find me on
+            the court, smashing it in table tennis or badminton, And let's not
+            forget my not-so-secret obsession with anime – because who needs
+            real-life drama when you have Naruto's ninja escapades.
+            <br />
+            And when it comes to discussions with colleagues and friends, I
+            approach them with an open mind and a healthy dose of humor. After
+            all, a bit of lighthearted banter can often lead to the most
+            creative solutions and meaningful connections.
+          </p>
+        </div>
+      </div>
+
+      <div id="experience">
+        <h3 class="mt-8 pb-4">Experience</h3>
         <div
           class="p-4 mb-12 group flex hover:bg-slate-800/50 rounded-md group-hover:drop-shadow-lg"
         >
@@ -128,7 +167,81 @@
               saepe, ipsam eos harum ipsum distinctio omnis debitis mollitia
               dolorum atque eveniet.
             </h3>
-            <div class="mt-4 flex flex-wrap">
+            <div class="mt-4 flex flex-wrap text-sm">
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                React.js
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Springboot
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                PostgreSQL
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Java
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Kafka
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="project">
+        <div class="pb-4">Projects</div>
+        <div
+          class="p-4 mb-12 group flex hover:bg-slate-800/50 rounded-md group-hover:drop-shadow-lg"
+        >
+          <div class="pr-8">
+            <img
+              src="/assets/sliceofdelight.png"
+              width="500"
+              height="100"
+              class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+            />
+          </div>
+          <div class="flex flex-col">
+            <a
+              class="flex flex-row"
+              href="https://slice-of-delight.vercel.app/"
+              target="_blank"
+            >
+              <h1 class="text-xl group-hover:text-teal-300 text-slate-200">
+                Slice Of Delight
+              </h1>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="inline-block h-4 w-4 group-hover:text-teal-300 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <h3 class="mt-4 text-slate-400">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              eum quam praesentium eaque consectetur ea ullam pariatur aut
+              saepe, ipsam eos harum ipsum distinctio omnis debitis mollitia
+              dolorum atque eveniet.
+            </h3>
+            <div class="mt-4 flex flex-wrap text-sm">
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
@@ -147,8 +260,59 @@
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
-                Next.js
+                Express.js
               </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Socket.io
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-4 mb-12 group flex hover:bg-slate-800/50 rounded-md group-hover:drop-shadow-lg"
+        >
+          <div class="pr-8">
+            <img
+              src="/assets/swiftdeploy.png"
+              width="500"
+              height="100"
+              class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+            />
+          </div>
+          <div class="flex flex-col">
+            <a
+              class="flex flex-row"
+              href="https://slice-of-delight.vercel.app/"
+              target="_blank"
+            >
+              <h1 class="text-xl group-hover:text-teal-300 text-slate-200">
+                Swift Deploy
+              </h1>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="inline-block h-4 w-4 group-hover:text-teal-300 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <h3 class="mt-4 text-slate-400">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              eum quam praesentium eaque consectetur ea ullam pariatur aut
+              saepe, ipsam eos harum ipsum distinctio omnis debitis mollitia
+              dolorum atque eveniet.
+            </h3>
+            <div class="mt-4 flex flex-wrap text-sm">
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
@@ -157,23 +321,52 @@
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
-                React.js
+                Node.js
               </div>
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
-                React.js
+                PostgreSQL
               </div>
               <div
                 class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
               >
-                React.js
+                Express.js
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Prisma
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Redis
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                Docker
+              </div>
+              <div
+                class="text-teal-300 bg-teal-400/10 py-1 px-3 rounded-full items-center mr-2 mt-2"
+              >
+                AWS S3, ECS
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="project">Projects</div>
+      <div>
+        <h3>What Am I learning currently / have in my learning list?</h3>
+        <div class="mb-12">
+          <ul class="list-disc pl-8 text-slate-400">
+            <li>Go Language</li>
+            <li>Multithreading and Concurrency</li>
+            <li>K8 and orchestration</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
